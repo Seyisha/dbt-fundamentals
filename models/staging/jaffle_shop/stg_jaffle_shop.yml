@@ -22,4 +22,9 @@ models:
                 - shipped
                 - returned
                 - return_pending
-                - placed 
+                - placed
+       - name: customer_id
+        test:
+            -relationships:
+                to: ref('stg_customers')
+                field: customer_id
